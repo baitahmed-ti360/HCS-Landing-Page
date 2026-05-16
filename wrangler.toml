@@ -1,0 +1,6 @@
+# Must match your Worker name in Cloudflare (Workers & Pages → project name).
+name = "motion-worker"
+compatibility_date = "2026-05-15"
+
+[assets]
+directory = "."
