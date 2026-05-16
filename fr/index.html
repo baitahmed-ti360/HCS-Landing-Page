@@ -1,0 +1,2508 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>M&amp;A Human Capital Score™ · Talent Insights 360 (FR)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<!-- Production URL: update hrefs below if this page is served from another domain or path. -->
+<meta name="description" content="Risque de capital humain structuré pour les fusions-acquisitions : le M&amp;A Human Capital Score™ évalue le leadership, la culture, le modèle opérationnel et les capacités stratégiques avant la clôture. Conçu pour les comités d'investissement." />
+<link rel="canonical" href="https://talentinsights360.com/fr/" />
+<link rel="alternate" hreflang="en" href="https://talentinsights360.com/" />
+<link rel="alternate" hreflang="fr" href="https://talentinsights360.com/fr/" />
+<link rel="alternate" hreflang="x-default" href="https://talentinsights360.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="M&amp;A Human Capital Score™ · Talent Insights 360 (FR)" />
+<meta property="og:description" content="Risque de capital humain structuré pour les fusions-acquisitions : le M&amp;A Human Capital Score™ évalue le leadership, la culture, le modèle opérationnel et les capacités stratégiques avant la clôture. Conçu pour les comités d'investissement." />
+<meta property="og:url" content="https://talentinsights360.com/fr/" />
+<meta property="og:image" content="https://talentinsights360.com/assets/logo-horizontal.png" />
+<meta property="og:locale" content="fr_CA" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="M&amp;A Human Capital Score™ · Talent Insights 360 (FR)" />
+<meta name="twitter:description" content="Risque de capital humain structuré pour les fusions-acquisitions : le M&amp;A Human Capital Score™ évalue le leadership, la culture, le modèle opérationnel et les capacités stratégiques avant la clôture. Conçu pour les comités d'investissement." />
+<meta name="twitter:image" content="https://talentinsights360.com/assets/logo-horizontal.png" />
+<link rel="icon" href="../assets/logo-mark.svg" />
+<link rel="stylesheet" href="../colors_and_type.css" />
+<template id="__bundler_thumbnail" data-bg-color="#F6F2EF">
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="200" fill="#F6F2EF"/>
+    <rect x="36" y="46" width="128" height="108" fill="#0C1135"/>
+    <text x="100" y="116" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="48" font-weight="700" fill="#DC5453">HCS</text>
+    <rect x="60" y="160" width="80" height="6" fill="#DC5453"/>
+  </svg>
+</template>
+<style>
+/* =========================================================================
+   M&A Human Capital Score™ · Landing page
+   Built on the TI360 design system (Inter + Rift, Navy/Beige/Crimson,
+   square buttons, no gradients, no decorative iconography).
+   Layout discipline kept tight: generous whitespace, one accent per section.
+   ========================================================================= */
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--ti-beige);
+  color: var(--ti-navy);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+/* ----- Skip link + keyboard focus (a11y) ----- */
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.skip-link:focus {
+  position: fixed;
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip: auto;
+  overflow: visible;
+  white-space: normal;
+  left: 16px;
+  top: 16px;
+  z-index: 10000;
+  padding: 14px 20px;
+  background: var(--ti-navy);
+  color: var(--ti-beige);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  box-shadow: 0 4px 24px rgba(12, 17, 53, 0.25);
+}
+main#main:focus {
+  outline: none;
+}
+main#main:focus-visible {
+  outline: 3px solid var(--ti-cobalt);
+  outline-offset: 8px;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+  outline: 3px solid var(--ti-cobalt);
+  outline-offset: 3px;
+}
+.btn:focus-visible {
+  outline-color: var(--ti-navy);
+  outline-offset: 2px;
+}
+.btn--ghost:focus-visible {
+  outline-color: var(--ti-crimson);
+}
+.nav__cta:focus-visible {
+  outline: 3px solid var(--ti-beige);
+  outline-offset: 2px;
+}
+.nav__lang:focus-visible {
+  outline-color: var(--ti-crimson);
+  outline-offset: 2px;
+}
+#tweaks-panel .tw-seg button:focus-visible {
+  outline-offset: 2px;
+  position: relative;
+}
+
+/* ----- Container + grid ----- */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 56px;
+}
+@media (max-width: 840px) {
+  .container { padding: 0 28px; }
+}
+
+/* ----- Section rhythm ----- */
+section {
+  padding: 96px 0;
+  position: relative;
+}
+section.tight  { padding: 64px 0; }
+section.loose  { padding: 128px 0; }
+
+.section-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ti-crimson);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.section-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: var(--ti-crimson);
+}
+
+/* Big editorial heading: Rift, sentence case for narrative, uppercase reserved for badges */
+.display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(44px, 5.4vw, 86px);
+  line-height: 1.02;
+  letter-spacing: -0.005em;
+  color: var(--ti-navy);
+  margin: 0;
+  text-transform: uppercase;
+}
+.display .accent { color: var(--ti-crimson); }
+
+.h-rift {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(32px, 3.4vw, 52px);
+  line-height: 1.05;
+  letter-spacing: 0;
+  color: var(--ti-navy);
+  margin: 0;
+  text-transform: uppercase;
+}
+.h-rift .accent { color: var(--ti-crimson); }
+
+.h-section {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(28px, 2.6vw, 40px);
+  line-height: 1.1;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+.h-section .accent { color: var(--ti-crimson); }
+
+.lede {
+  font-family: var(--font-sans);
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--ti-graphite);
+  margin: 0;
+  max-width: 60ch;
+  text-wrap: pretty;
+}
+.lede strong { color: var(--ti-navy); font-weight: 600; }
+
+p { margin: 0 0 16px; max-width: 64ch; text-wrap: pretty; }
+p:last-child { margin-bottom: 0; }
+
+.muted { color: var(--ti-graphite); }
+
+/* ----- Button ----- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  padding: 18px 32px;
+  border: 0;
+  border-radius: 0;
+  background: var(--ti-crimson);
+  color: var(--ti-ivory);
+  cursor: pointer;
+  transition: background 300ms cubic-bezier(0.2,0.6,0.2,1), transform 300ms cubic-bezier(0.2,0.6,0.2,1);
+  text-decoration: none;
+  line-height: 1;
+}
+.btn:hover { background: var(--ti-cobalt); }
+.btn .arr {
+  display: inline-block;
+  transition: transform 300ms cubic-bezier(0.2,0.6,0.2,1);
+}
+.btn:hover .arr { transform: translateX(4px); }
+.btn--ghost {
+  background: transparent;
+  color: var(--ti-navy);
+  box-shadow: inset 0 0 0 1.5px var(--ti-navy);
+}
+.btn--ghost:hover { background: var(--ti-navy); color: var(--ti-beige); }
+.btn-caption {
+  display: block;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--ti-graphite);
+  font-weight: 500;
+}
+
+/* =========================================================================
+   NAV
+   ========================================================================= */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--ti-beige) 92%, transparent);
+  backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-smoke) 18%, transparent);
+}
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+.nav__logo { height: 50px; width: 150px; display: block; }
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav__product {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ti-graphite);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav__product .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--ti-crimson);
+  display: inline-block;
+}
+.nav__cta {
+  background: var(--ti-navy);
+  color: var(--ti-beige);
+  padding: 11px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 300ms cubic-bezier(0.2,0.6,0.2,1);
+}
+.nav__cta:hover { background: var(--ti-crimson); }
+.nav__lang {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--ti-graphite);
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid color-mix(in srgb, var(--ti-smoke) 32%, transparent);
+  transition: color 200ms, border-color 200ms;
+}
+.nav__lang:hover { color: var(--ti-crimson); border-color: var(--ti-crimson); }
+@media (max-width: 720px) {
+  .nav__product { display: none; }
+}
+
+/* =========================================================================
+   HERO
+   ========================================================================= */
+.hero {
+  padding: 72px 0 112px;
+  position: relative;
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 80px;
+  align-items: start;
+}
+@media (min-width: 981px) {
+  .hero__grid {
+    align-items: center;
+  }
+}
+@media (max-width: 980px) {
+  .hero__grid { grid-template-columns: 1fr; gap: 56px; }
+}
+.hero__product {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ti-crimson);
+  margin-bottom: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.hero__product::before {
+  content: "";
+  display: inline-block; width: 28px; height: 2px;
+  background: var(--ti-crimson);
+}
+.hero__lede {
+  margin-top: 28px;
+  font-size: 22px;
+  line-height: 1.45;
+  color: var(--ti-navy);
+  max-width: 36ch;
+  font-weight: 500;
+}
+.hero__lede strong {
+  font-weight: 700;
+}
+.hero__body {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ti-graphite);
+  max-width: 50ch;
+}
+.hero__cta {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero__secondary {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 50ch;
+}
+.hero__secondary-link {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ti-graphite);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-smoke) 45%, transparent);
+  padding-bottom: 2px;
+  transition: color 200ms ease, border-color 200ms ease;
+  line-height: 1.35;
+}
+.hero__secondary-link::before {
+  content: "▸ ";
+  color: var(--ti-crimson);
+  font-weight: 600;
+}
+.hero__secondary-link:hover {
+  color: var(--ti-navy);
+  border-bottom-color: var(--ti-crimson);
+}
+
+/* Hero: sample score card. The product IS the imagery. */
+.score-card {
+  background: var(--ti-ivory);
+  border: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 2px 4px rgba(12,17,53,0.04), 0 24px 48px rgba(12,17,53,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+}
+.score-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+.score-card__title-block { display: flex; flex-direction: column; gap: 6px; }
+.score-card__eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ti-smoke);
+}
+.score-card__title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--ti-navy);
+}
+.score-card__sample {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ti-graphite);
+  padding: 5px 8px;
+  border: 1px solid color-mix(in srgb, var(--ti-smoke) 32%, transparent);
+  border-radius: 2px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.score-card__hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: center;
+}
+.score-card__value {
+  font-family: var(--font-display);
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  color: var(--ti-navy);
+  font-variant-numeric: tabular-nums;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+.score-card__value .unit {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--ti-smoke);
+  letter-spacing: 0;
+  padding-bottom: 12px;
+}
+.score-card__band {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.score-card__band-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ti-smoke);
+}
+.score-card__band-value {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ti-navy);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.score-card__band-pip {
+  width: 10px; height: 10px;
+  background: var(--ti-tangerine);
+  border-radius: 50%;
+}
+.score-card__band-note {
+  font-size: 13px;
+  color: var(--ti-graphite);
+  line-height: 1.45;
+}
+.score-card__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.dim-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 1.2fr) minmax(0, 2fr) auto;
+  gap: 16px;
+  align-items: center;
+  font-size: 13px;
+}
+.dim-row__name {
+  font-weight: 500;
+  color: var(--ti-navy);
+}
+.dim-row__bar {
+  position: relative;
+  height: 6px;
+  background: var(--ti-platinum);
+  border-radius: 0;
+  overflow: hidden;
+}
+.dim-row__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--ti-navy);
+  border-radius: 0;
+}
+.dim-row__fill--high { background: var(--ti-burgundy); }
+.dim-row__fill--med  { background: var(--ti-tangerine); }
+.dim-row__fill--low  { background: var(--ti-emerald); }
+.dim-row__score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--ti-navy);
+  min-width: 32px;
+  text-align: right;
+}
+
+/* =========================================================================
+   "WHAT IT IS": single statement, calm pause after hero
+   ========================================================================= */
+.what-it-is {
+  padding: 96px 0;
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+.what-it-is__grid {
+  display: grid;
+  grid-template-columns: minmax(0, min(420px, 38vw)) minmax(0, 1fr);
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 840px) {
+  .what-it-is__grid { grid-template-columns: 1fr; gap: 32px; }
+}
+.what-it-is__body { display: flex; flex-direction: column; gap: 32px; }
+.what-it-is__question {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(32px, 3.4vw, 48px);
+  line-height: 1.06;
+  letter-spacing: -0.005em;
+  color: var(--ti-navy);
+  text-transform: uppercase;
+  padding-top: 28px;
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  max-width: 22ch;
+}
+.what-it-is__question .accent { color: var(--ti-crimson); }
+.what-it-is__kicker {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--ti-navy);
+  margin: 0;
+  padding-top: 28px;
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  max-width: 44ch;
+  text-transform: none;
+}
+.what-it-is__kicker em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* =========================================================================
+   "WHAT IT ASSESSES": Dimensions readout
+   ========================================================================= */
+.assesses {
+  padding: 96px 0;
+  background: var(--ti-ivory);
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+.assesses__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: end;
+  margin-bottom: 64px;
+}
+@media (max-width: 840px) {
+  .assesses__head { grid-template-columns: 1fr; gap: 24px; }
+}
+.assesses__intro p { color: var(--ti-graphite); font-size: 17px; line-height: 1.55; }
+.assesses__intro .target-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ti-crimson);
+}
+.assesses__intro .target-tag::before {
+  content: "";
+  width: 8px; height: 8px; background: var(--ti-crimson); border-radius: 0;
+}
+
+.dim-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+@media (max-width: 720px) {
+  .dim-list { grid-template-columns: 1fr; }
+}
+.dim {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: baseline;
+  padding: 28px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+.dim:nth-child(odd) { padding-right: 32px; border-right: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent); }
+.dim:nth-child(even) { padding-left: 32px; }
+@media (max-width: 720px) {
+  .dim:nth-child(odd) { padding-right: 0; border-right: 0; }
+  .dim:nth-child(even) { padding-left: 0; }
+}
+.dim__num {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ti-smoke);
+  font-variant-numeric: tabular-nums;
+  min-width: 28px;
+}
+.dim__name {
+  font-family: var(--font-sans);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ti-navy);
+  line-height: 1.3;
+}
+.dim__hint {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ti-graphite);
+  margin-top: 4px;
+}
+.assesses__footnote {
+  margin-top: 48px;
+  font-size: 15px;
+  color: var(--ti-graphite);
+  max-width: 70ch;
+}
+
+/* =========================================================================
+   "THE PROBLEM"
+   ========================================================================= */
+.problem {
+  padding: 128px 0;
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+.problem__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 980px) {
+  .problem__grid { grid-template-columns: 1fr; gap: 56px; }
+}
+.problem__copy { display: flex; flex-direction: column; gap: 32px; }
+.problem__copy p { font-size: 18px; line-height: 1.55; color: var(--ti-graphite); }
+.problem__copy .one-line {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ti-navy);
+  line-height: 1.4;
+  max-width: 38ch;
+}
+
+.consequences {
+  border-left: 2px solid var(--ti-crimson);
+  padding: 8px 0 8px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.consequence {
+  padding: 20px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--ti-navy);
+  line-height: 1.4;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
+}
+.consequence:last-child { border-bottom: 0; }
+.consequence__meta {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ti-smoke);
+  white-space: nowrap;
+}
+
+/* =========================================================================
+   "HOW IT WORKS"
+   ========================================================================= */
+.how {
+  background: var(--ti-navy);
+  color: var(--ti-beige);
+  padding: 128px 0;
+}
+.how__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 96px;
+}
+@media (max-width: 840px) {
+  .how__intro { grid-template-columns: 1fr; gap: 24px; }
+}
+.how__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(40px, 4.6vw, 72px);
+  line-height: 1.0;
+  letter-spacing: -0.005em;
+  color: var(--ti-beige);
+  text-transform: uppercase;
+  margin: 0;
+}
+.how__title .accent { color: var(--ti-flame); }
+.how__sub {
+  font-size: 18px;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--ti-beige) 70%, transparent);
+  max-width: 40ch;
+}
+.how .section-eyebrow { color: var(--ti-flame); }
+.how .section-eyebrow::before { background: var(--ti-flame); }
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid color-mix(in srgb, var(--ti-beige) 18%, transparent);
+}
+.step {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1.1fr) minmax(0, 1.6fr);
+  gap: 48px;
+  padding: 56px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-beige) 18%, transparent);
+  align-items: start;
+}
+@media (max-width: 840px) {
+  .step { grid-template-columns: 1fr; gap: 16px; padding: 40px 0; }
+}
+.step__num {
+  font-family: var(--font-display);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 0.85;
+  color: var(--ti-flame);
+  font-variant-numeric: tabular-nums;
+}
+.step__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(24px, 2.4vw, 34px);
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: var(--ti-beige);
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+.step__lead {
+  font-size: 17px;
+  color: color-mix(in srgb, var(--ti-beige) 78%, transparent);
+  line-height: 1.5;
+}
+.step__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.step__body p {
+  font-size: 16px;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--ti-beige) 72%, transparent);
+}
+.layers {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+.layer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  padding: 14px 16px;
+  background: color-mix(in srgb, var(--ti-beige) 6%, transparent);
+  border-left: 2px solid var(--ti-flame);
+  border-radius: 0;
+}
+.layer__name {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ti-flame);
+  white-space: nowrap;
+}
+.layer__desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--ti-beige) 78%, transparent);
+}
+@media (max-width: 600px) {
+  .layer { grid-template-columns: 1fr; gap: 4px; }
+}
+
+.step__output {
+  margin-top: 16px;
+  padding: 20px;
+  background: color-mix(in srgb, var(--ti-beige) 6%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ti-beige) 16%, transparent);
+}
+.step__output-lbl {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ti-flame);
+  margin-bottom: 10px;
+}
+.step__output-val {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--ti-beige);
+}
+.step__output-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.step__output-list li {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: var(--ti-beige);
+  line-height: 1.15;
+  padding-left: 20px;
+  position: relative;
+}
+.step__output-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 10px;
+  height: 2px;
+  background: var(--ti-flame);
+}
+
+.step__data-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.step__data-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--ti-beige) 76%, transparent);
+  line-height: 1.4;
+}
+.step__data-row span:first-child {
+  font-weight: 600;
+  color: var(--ti-beige);
+  font-variant-numeric: tabular-nums;
+}
+
+.how__goal {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid color-mix(in srgb, var(--ti-beige) 18%, transparent);
+  font-family: var(--font-display);
+  font-size: clamp(28px, 2.6vw, 40px);
+  font-weight: 700;
+  line-height: 1.08;
+  color: var(--ti-beige);
+  text-transform: uppercase;
+  letter-spacing: 0;
+  max-width: 38ch;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.how__goal-lead { color: var(--ti-beige); }
+.how__goal .accent { color: var(--ti-flame); font-weight: 700; }
+.how__goal-hit {
+  display: inline;
+  background: var(--ti-flame);
+  color: var(--ti-navy);
+  padding: 0.04em 0.2em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* =========================================================================
+   "WHAT YOU RECEIVE": deliverables
+   ========================================================================= */
+.receive {
+  padding: 128px 0;
+}
+.receive__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: end;
+  margin-bottom: 64px;
+}
+@media (max-width: 840px) {
+  .receive__head { grid-template-columns: 1fr; gap: 24px; }
+}
+.receive__intro {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--ti-graphite);
+  max-width: 38ch;
+}
+
+.deliverables {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+@media (max-width: 980px) {
+  .deliverables { grid-template-columns: 1fr; }
+  .deliverables .deliv { grid-column: 1 / -1 !important; }
+}
+.deliv {
+  background: var(--ti-ivory);
+  border: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  transition: transform 300ms cubic-bezier(0.2,0.6,0.2,1), box-shadow 300ms cubic-bezier(0.2,0.6,0.2,1);
+}
+.deliv:hover {
+  box-shadow: 0 4px 8px rgba(12,17,53,0.06), 0 24px 48px rgba(12,17,53,0.06);
+}
+.deliv__num {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--ti-crimson);
+  font-variant-numeric: tabular-nums;
+  text-transform: uppercase;
+}
+.deliv__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: var(--ti-navy);
+  text-transform: uppercase;
+  margin: 0;
+}
+.deliv__title .tm {
+  font-size: 11px;
+  vertical-align: super;
+  margin-left: 2px;
+  color: var(--ti-crimson);
+}
+.deliv__desc {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ti-graphite);
+  margin: 0;
+}
+
+/* Layout: featured + 4 supporting */
+.deliv--feature { grid-column: span 12; padding: 0; background: transparent; border: 0; }
+.deliv--feature:hover { box-shadow: none; }
+.deliv--feature .deliv__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 0;
+  background: var(--ti-navy);
+  color: var(--ti-beige);
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (max-width: 840px) {
+  .deliv--feature .deliv__inner { grid-template-columns: 1fr; }
+}
+.deliv--feature .deliv__copy {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.deliv--feature .deliv__num { color: var(--ti-flame); }
+.deliv--feature .deliv__title { color: var(--ti-beige); font-size: 36px; }
+.deliv--feature .deliv__title .tm { color: var(--ti-flame); }
+.deliv--feature .deliv__desc { color: color-mix(in srgb, var(--ti-beige) 72%, transparent); font-size: 16px; }
+.deliv--feature .deliv__viz {
+  background: color-mix(in srgb, var(--ti-beige) 4%, transparent);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  border-left: 1px solid color-mix(in srgb, var(--ti-beige) 12%, transparent);
+}
+@media (max-width: 840px) {
+  .deliv--feature .deliv__viz { border-left: 0; border-top: 1px solid color-mix(in srgb, var(--ti-beige) 12%, transparent); }
+}
+.deliv__hero-score {
+  font-family: var(--font-display);
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  color: var(--ti-beige);
+  font-variant-numeric: tabular-nums;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+.deliv__hero-score .unit {
+  font-size: 24px;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--ti-beige) 50%, transparent);
+  padding-bottom: 8px;
+}
+.deliv__dim-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.deliv__dim-pillar {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ti-flame);
+  padding-bottom: 2px;
+  margin-top: 8px;
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-beige) 18%, transparent);
+}
+.deliv__dim-strip > .deliv__dim-pillar:first-child { margin-top: 0; }
+.deliv__dim-row {
+  display: grid;
+  grid-template-columns: minmax(110px, 1fr) minmax(0, 2fr) auto;
+  gap: 14px;
+  align-items: center;
+  font-size: 12px;
+  color: color-mix(in srgb, var(--ti-beige) 76%, transparent);
+}
+.deliv__dim-bar {
+  height: 4px;
+  background: color-mix(in srgb, var(--ti-beige) 12%, transparent);
+  position: relative;
+}
+.deliv__dim-fill {
+  position: absolute; inset: 0 auto 0 0;
+  background: var(--ti-beige);
+}
+.deliv__dim-fill.high { background: var(--ti-burgundy); }
+.deliv__dim-fill.med  { background: var(--ti-tangerine); }
+.deliv__dim-fill.pos  { background: var(--ti-emerald); }
+.deliv__dim-score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--ti-beige);
+  min-width: 28px;
+  text-align: right;
+}
+
+.deliv--span6 { grid-column: span 6; }
+.deliv--span3 { grid-column: span 6; }
+@media (min-width: 981px) {
+  .deliv--span6 { grid-column: span 6; }
+  .deliv--span3 { grid-column: span 6; }
+}
+
+/* Per-card mini visuals */
+.mini-bars {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 6px;
+  align-items: end;
+  height: 56px;
+}
+.mini-bars span {
+  background: var(--ti-platinum);
+  width: 100%;
+  display: block;
+  border-radius: 0;
+}
+.mini-bars .b1 { height: 70%; background: var(--ti-burgundy); }
+.mini-bars .b2 { height: 50%; background: var(--ti-tangerine); }
+.mini-bars .b3 { height: 32%; background: var(--ti-tangerine); }
+.mini-bars .b4 { height: 22%; background: var(--ti-platinum); color: var(--ti-smoke); }
+.mini-bars .b5 { height: 18%; background: var(--ti-platinum); color: var(--ti-smoke); }
+.mini-bars__labels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 6px;
+  font-size: 10px;
+  color: var(--ti-smoke);
+  margin-top: 6px;
+  letter-spacing: 0.04em;
+}
+
+.exposure-list { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+.exposure-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: baseline;
+  padding: 10px 0;
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  font-size: 13px;
+}
+.exposure-row:first-child { border-top: 0; padding-top: 0; }
+.exposure-row__lbl { color: var(--ti-graphite); }
+.exposure-row__val {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ti-navy);
+}
+.exposure-row__val.high { color: var(--ti-burgundy); }
+
+.priorities { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+.priority {
+  display: grid;
+  grid-template-columns: 28px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+.priority:last-child { border-bottom: 0; }
+.priority__num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ti-crimson);
+  font-variant-numeric: tabular-nums;
+}
+.priority__lbl { color: var(--ti-navy); font-weight: 500; }
+.priority__days {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--ti-smoke);
+  text-transform: uppercase;
+}
+
+.ic-stamp {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border: 1px solid var(--ti-crimson);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ti-crimson);
+  align-self: flex-start;
+}
+.ic-stamp .dot {
+  width: 6px; height: 6px; background: var(--ti-crimson); border-radius: 50%;
+}
+
+/* =========================================================================
+   "WHEN TO USE IT": deal lifecycle timeline
+   ========================================================================= */
+.lifecycle {
+  padding: 128px 0;
+  background: var(--ti-ivory);
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+.lifecycle__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: end;
+  margin-bottom: 80px;
+}
+@media (max-width: 840px) {
+  .lifecycle__head { grid-template-columns: 1fr; gap: 24px; }
+}
+.lifecycle__sub {
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ti-graphite);
+  max-width: 40ch;
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+@media (max-width: 980px) {
+  .timeline { grid-template-columns: 1fr; gap: 4px; }
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 20px;
+  height: 1px;
+  background: color-mix(in srgb, var(--ti-smoke) 30%, transparent);
+}
+@media (max-width: 980px) { .timeline::before { display: none; } }
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 0;
+  position: relative;
+}
+.stage__pip {
+  position: relative;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--ti-ivory);
+  border: 1.5px solid color-mix(in srgb, var(--ti-smoke) 40%, transparent);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ti-graphite);
+  font-variant-numeric: tabular-nums;
+  z-index: 1;
+}
+.stage--active .stage__pip {
+  background: var(--ti-crimson);
+  border-color: var(--ti-crimson);
+  color: var(--ti-ivory);
+}
+.stage__name {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ti-navy);
+}
+.stage--active .stage__name { color: var(--ti-crimson); }
+.stage__desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ti-graphite);
+  max-width: 28ch;
+}
+@media (max-width: 980px) {
+  .stage {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 16px;
+    padding: 16px 0;
+    border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  }
+  .stage__pip { grid-row: span 3; }
+  .stage__desc { max-width: none; }
+}
+
+/* =========================================================================
+   "WHY IT'S DIFFERENT": comparison table
+   ========================================================================= */
+.different { padding: 128px 0; }
+.different__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: end;
+  margin-bottom: 64px;
+}
+@media (max-width: 840px) {
+  .different__head { grid-template-columns: 1fr; gap: 24px; }
+}
+.different__sub p { font-size: 17px; line-height: 1.55; color: var(--ti-graphite); }
+.different__sub em {
+  font-style: italic;
+  color: var(--ti-navy);
+  font-weight: 500;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-variant-numeric: tabular-nums;
+  margin-top: 8px;
+  background: var(--ti-ivory);
+  border: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.compare-table thead th {
+  background: var(--ti-navy);
+  color: var(--ti-beige);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding: 18px 24px;
+  text-transform: none;
+}
+.compare-table thead th:first-child {
+  background: color-mix(in srgb, var(--ti-navy) 88%, transparent);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ti-beige) 70%, transparent);
+}
+.compare-table thead th.ti-col {
+  background: var(--ti-crimson);
+  color: var(--ti-ivory);
+}
+.compare-table tbody td {
+  padding: 22px 24px;
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 18%, transparent);
+  font-size: 16px;
+  line-height: 1.45;
+  vertical-align: top;
+  color: var(--ti-navy);
+}
+.compare-table tbody td:first-child {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ti-smoke);
+  background: color-mix(in srgb, var(--ti-platinum) 50%, transparent);
+  width: 18%;
+  vertical-align: middle;
+}
+.compare-table tbody td.ti-col {
+  font-weight: 500;
+  background: color-mix(in srgb, var(--ti-crimson) 5%, transparent);
+}
+.compare-table tbody td.trad-col { color: var(--ti-graphite); }
+
+.different__kicker {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.different__kicker .word {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--ti-navy);
+  padding: 4px 18px;
+  border: 1px solid color-mix(in srgb, var(--ti-smoke) 30%, transparent);
+  line-height: 1;
+}
+.different__kicker .word--accent { color: var(--ti-crimson); border-color: var(--ti-crimson); }
+
+/* =========================================================================
+   "QUI LE CONSTRUIT": proof / about
+   ========================================================================= */
+.proof {
+  padding: 96px 0;
+  background: var(--ti-ivory);
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+.proof__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 840px) {
+  .proof__grid { grid-template-columns: 1fr; gap: 32px; }
+}
+.proof__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.proof__body p {
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ti-graphite);
+  margin: 0;
+  max-width: 56ch;
+}
+.proof__body strong { color: var(--ti-navy); font-weight: 600; }
+.proof__body em { font-style: italic; color: var(--ti-navy); }
+.proof__foot {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ti-smoke);
+  margin: 8px 0 0;
+  max-width: 52ch;
+}
+.proof__foot em { font-style: italic; }
+
+/* =========================================================================
+   "DESIGNED FOR DEAL CONVERSATIONS": quiet section
+   ========================================================================= */
+.conversation {
+  padding: 96px 0;
+  background: var(--ti-beige);
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+.conversation__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 840px) {
+  .conversation__grid { grid-template-columns: 1fr; gap: 32px; }
+}
+.conversation__body p { font-size: 17px; line-height: 1.55; color: var(--ti-graphite); }
+.conversation__no {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+}
+.conversation__no-row {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-smoke) 22%, transparent);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ti-navy);
+  align-items: center;
+}
+.conversation__no-mark {
+  width: 18px; height: 2px;
+  background: var(--ti-crimson);
+  display: block;
+}
+
+/* =========================================================================
+   FINAL CTA: dark
+   ========================================================================= */
+.final-cta {
+  background: var(--ti-navy);
+  color: var(--ti-beige);
+  padding: 128px 0 96px;
+}
+.final-cta__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: end;
+}
+@media (max-width: 840px) {
+  .final-cta__inner { grid-template-columns: 1fr; gap: 48px; }
+}
+.final-cta__question {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(36px, 4.6vw, 72px);
+  line-height: 1.0;
+  letter-spacing: -0.005em;
+  color: var(--ti-beige);
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 22ch;
+}
+.final-cta__setup {
+  display: block;
+  color: var(--ti-beige);
+}
+.final-cta__hook,
+.final-cta__question .accent {
+  display: block;
+  color: var(--ti-flame);
+}
+.final-cta .section-eyebrow { color: var(--ti-flame); }
+.final-cta .section-eyebrow::before { background: var(--ti-flame); }
+.final-cta__cta { display: flex; flex-direction: column; align-items: flex-start; }
+.final-cta .btn { background: var(--ti-flame); color: var(--ti-ivory); }
+.final-cta .btn:hover { background: var(--ti-crimson); }
+.final-cta__caption {
+  margin-top: 16px;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--ti-beige) 65%, transparent);
+}
+.final-cta__secondary {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 50ch;
+}
+.final-cta__secondary-link {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--ti-beige) 78%, transparent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--ti-beige) 28%, transparent);
+  padding-bottom: 2px;
+  transition: color 200ms ease, border-color 200ms ease;
+  line-height: 1.35;
+}
+.final-cta__secondary-link::before {
+  content: "▸ ";
+  color: var(--ti-flame);
+  font-weight: 600;
+}
+.final-cta__secondary-link:hover {
+  color: var(--ti-beige);
+  border-bottom-color: var(--ti-flame);
+}
+
+/* =========================================================================
+   FOOTER
+   ========================================================================= */
+.footer {
+  background: var(--ti-navy);
+  color: color-mix(in srgb, var(--ti-beige) 60%, transparent);
+  padding: 64px 0 48px;
+  border-top: 1px solid color-mix(in srgb, var(--ti-beige) 14%, transparent);
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.9fr) minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 64px;
+  align-items: start;
+}
+@media (max-width: 840px) {
+  .footer__grid { grid-template-columns: 1fr; gap: 32px; }
+}
+.footer__logo { height: 70px; width: 210px; margin-bottom: 20px; }
+.footer__tagline { font-size: 13px; line-height: 1.5; max-width: 38ch; }
+.footer__col-lbl {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ti-beige) 50%, transparent);
+  margin-bottom: 16px;
+}
+.footer__links { display: flex; flex-direction: column; gap: 10px; }
+.footer__links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--ti-beige);
+  transition: color 200ms;
+}
+.footer__links a:hover { color: var(--ti-flame); }
+.footer__address {
+  font-size: 14px;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--ti-beige) 78%, transparent);
+  font-style: normal;
+}
+.footer__rule {
+  height: 1px;
+  background: color-mix(in srgb, var(--ti-beige) 16%, transparent);
+  margin: 56px 0 24px;
+  border: 0;
+}
+.footer__base {
+  display: flex; justify-content: space-between; flex-wrap: wrap;
+  font-size: 12px;
+  color: color-mix(in srgb, var(--ti-beige) 50%, transparent);
+  gap: 16px;
+}
+
+/* =========================================================================
+   TWEAKS PANEL (custom, minimal)
+   ========================================================================= */
+#tweaks-panel {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 280px;
+  background: var(--ti-ivory);
+  border: 1px solid color-mix(in srgb, var(--ti-smoke) 32%, transparent);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(12,17,53,0.08), 0 24px 48px rgba(12,17,53,0.12);
+  padding: 20px;
+  z-index: 100;
+  font-family: var(--font-sans);
+  display: none;
+}
+#tweaks-panel.is-on { display: block; }
+#tweaks-panel h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ti-navy);
+  margin: 0 0 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#tweaks-panel .close-x {
+  background: none; border: 0; cursor: pointer;
+  font-size: 18px; color: var(--ti-smoke); line-height: 1;
+}
+#tweaks-panel .tw-sub {
+  font-size: 12px;
+  color: var(--ti-graphite);
+  margin: 0 0 16px;
+}
+#tweaks-panel .tw-group { margin-bottom: 16px; }
+#tweaks-panel .tw-lbl {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ti-smoke);
+  margin-bottom: 8px;
+  display: block;
+}
+#tweaks-panel .tw-seg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid color-mix(in srgb, var(--ti-smoke) 32%, transparent);
+}
+#tweaks-panel .tw-seg button {
+  padding: 10px 12px;
+  background: var(--ti-ivory);
+  border: 0;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  color: var(--ti-graphite);
+  transition: background 200ms;
+}
+#tweaks-panel .tw-seg button + button {
+  border-left: 1px solid color-mix(in srgb, var(--ti-smoke) 32%, transparent);
+}
+#tweaks-panel .tw-seg button.on {
+  background: var(--ti-navy);
+  color: var(--ti-beige);
+}
+
+/* Accent overrides */
+body[data-accent="cobalt"] {
+  --ti-crimson: var(--ti-cobalt);
+}
+body[data-accent="cobalt"] .nav__product .dot { background: var(--ti-cobalt); }
+</style>
+</head>
+<body data-accent="crimson" data-hero="light">
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="/fr/" aria-label="Talent Insights 360">
+      <img class="nav__logo" src="../assets/logo-horizontal.png" alt="Talent Insights 360" />
+    </a>
+    <div class="nav__right">
+      <span class="nav__product">
+        <span class="dot"></span>
+        M&amp;A Human Capital Score™
+      </span>
+      <a class="nav__lang" href="/" hreflang="en" lang="en" title="English version">EN</a>
+      <a class="nav__cta" href="#cta">Démarrer la conversation →</a>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div>
+        <div class="hero__product">M&amp;A Human Capital Score™</div>
+        <h1 class="display">Le risque de capital humain, <span class="accent">scoré.</span></h1>
+        <p class="hero__lede"><strong>L'entreprise cible peut-elle réellement livrer la thèse du deal ?</strong></p>
+        <p class="hero__body">Une lecture du risque d'exécution avant clôture, prête pour le comité d'investissement : scorée, fondée sur des preuves, et traduite en exposition financière et priorités du jour&nbsp;1.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#cta">Démarrer la conversation <span class="arr">→</span></a>
+          <span class="btn-caption">20 minutes. Pas de data room. Sans engagement.</span>
+          <div class="hero__secondary">
+            <a class="hero__secondary-link" href="#conversation">Ce que couvre une conversation de 20 minutes</a>
+            <a class="hero__secondary-link" href="#deliverables">Exemple de livrable prêt pour le CI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte d'échantillon : le produit TI360 EST l'imagerie -->
+      <aside class="score-card" aria-label="Score composite (exemple)">
+        <div class="score-card__head">
+          <div class="score-card__title-block">
+            <span class="score-card__eyebrow">M&amp;A Human Capital Score™</span>
+            <span class="score-card__title">Projet Northwind</span>
+          </div>
+          <span class="score-card__sample">Illustratif</span>
+        </div>
+        <div class="score-card__hero">
+          <div class="score-card__value">62<span class="unit">/100</span></div>
+          <div class="score-card__band">
+            <span class="score-card__band-label">Niveau de risque</span>
+            <span class="score-card__band-value"><span class="score-card__band-pip"></span>Élevé</span>
+            <span class="score-card__band-note">Risque d'exécution concentré dans deux fonctions. Deux constats méritent l'attention du conseil avant clôture.</span>
+          </div>
+        </div>
+        <div class="score-card__rows">
+          <div class="dim-row">
+            <div class="dim-row__name">Leadership &amp; continuité des talents</div>
+            <div class="dim-row__bar"><div class="dim-row__fill dim-row__fill--high" style="width: 52%"></div></div>
+            <div class="dim-row__score">52</div>
+          </div>
+          <div class="dim-row">
+            <div class="dim-row__name">Culture &amp; gouvernance</div>
+            <div class="dim-row__bar"><div class="dim-row__fill dim-row__fill--med" style="width: 67%"></div></div>
+            <div class="dim-row__score">67</div>
+          </div>
+          <div class="dim-row">
+            <div class="dim-row__name">Modèle opérationnel &amp; capacité d'exécution</div>
+            <div class="dim-row__bar"><div class="dim-row__fill dim-row__fill--med" style="width: 61%"></div></div>
+            <div class="dim-row__score">61</div>
+          </div>
+          <div class="dim-row">
+            <div class="dim-row__name">Capacités stratégiques &amp; préparation aux évolutions futures</div>
+            <div class="dim-row__bar"><div class="dim-row__fill dim-row__fill--low" style="width: 68%"></div></div>
+            <div class="dim-row__score">68</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ LE PROBLÈME ============================ -->
+<section class="problem">
+  <div class="container">
+    <div class="problem__grid">
+      <div class="problem__copy">
+        <div class="section-eyebrow">Le problème</div>
+        <h2 class="h-rift">La plupart des modèles de deal supposent que l'organisation <span class="accent">peut exécuter le plan.</span></h2>
+        <p>Chaque acquisition comporte un écart entre ce que la thèse de deal suppose que l'organisation peut faire et ce qu'elle peut réellement livrer. Cet écart est rarement testé avant la clôture.</p>
+        <p class="one-line">Quand ces hypothèses ne sont pas testées, le risque apparaît plus tard.</p>
+      </div>
+      <div>
+        <div class="section-eyebrow" style="opacity: 0.55;">Ce qui apparaît après clôture</div>
+        <div class="consequences">
+          <div class="consequence">Les synergies sont retardées <span class="consequence__meta">Mois 3–9</span></div>
+          <div class="consequence">Les personnes clés partent <span class="consequence__meta">Mois 1–12</span></div>
+          <div class="consequence">La capacité de leadership est sous pression <span class="consequence__meta">Mois 1+</span></div>
+          <div class="consequence">L'intégration ralentit <span class="consequence__meta">Mois 6–12</span></div>
+          <div class="consequence">La discipline opérationnelle se relâche <span class="consequence__meta">Année 1+</span></div>
+          <div class="consequence">La valeur ne se matérialise pas au rythme prévu <span class="consequence__meta">Année 2+</span></div>
+        </div>
+        <p class="muted" style="margin-top: 24px; font-size: 15px;">Ce ne sont pas des surprises. Ce sont des hypothèses jamais mises à l'épreuve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CE QUE C'EST ============================ -->
+<section class="what-it-is">
+  <div class="container">
+    <div class="what-it-is__grid">
+      <div>
+        <div class="section-eyebrow">Ce que c'est</div>
+        <h2 class="h-section">Les hypothèses du modèle financier : <span class="accent">mises à l'épreuve avant clôture.</span></h2>
+      </div>
+      <div class="what-it-is__body">
+        <p class="lede">Le M&amp;A Human Capital Score™ est un diagnostic pré-clôture qui évalue si l'organisation cible peut livrer le plan de création de valeur. Il s'inscrit aux côtés des diligences financière, juridique et opérationnelle. Non en substitut, mais comme la lecture complémentaire qu'elles ne sont pas conçues pour fournir.</p>
+        <p>Les constats sont scorés, liés à la thèse du deal, et traduits en exposition financière et priorités du jour&nbsp;1.</p>
+        <p class="what-it-is__kicker"><em>Conçu pour le comité d'investissement. Une pièce scorée, pas un rapport narratif.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CE QU'IL ÉVALUE ============================ -->
+<section class="assesses">
+  <div class="container">
+    <div class="assesses__head">
+      <div>
+        <div class="section-eyebrow">Ce qu'il évalue</div>
+        <h2 class="h-rift">Quatre piliers. Onze dimensions. <span class="accent">Un score.</span></h2>
+      </div>
+      <div class="assesses__intro">
+        <p>HCS score l'entreprise cible sur quatre piliers de risque d'exécution et onze dimensions diagnostiques. Chaque constat remonte vers le score composite, puis redescend vers une exposition financière ou une priorité du jour&nbsp;1.</p>
+        <span class="target-tag">Entreprise cible · 4 piliers · 11 dimensions</span>
+      </div>
+    </div>
+
+    <div class="dim-list">
+      <div class="dim">
+        <span class="dim__num">01</span>
+        <span class="dim__name">Leadership &amp; continuité des talents
+          <span class="dim__hint">Le leadership et les talents critiques tiendront-ils durant la transaction&nbsp;?</span>
+        </span>
+      </div>
+      <div class="dim">
+        <span class="dim__num">02</span>
+        <span class="dim__name">Culture &amp; gouvernance
+          <span class="dim__hint">La culture et la gouvernance permettront-elles une exécution rapide, alignée et responsable après clôture&nbsp;?</span>
+        </span>
+      </div>
+      <div class="dim">
+        <span class="dim__num">03</span>
+        <span class="dim__name">Modèle opérationnel &amp; capacité d'exécution
+          <span class="dim__hint">L'organisation est-elle structurée et outillée pour livrer le plan de création de valeur à grande échelle&nbsp;?</span>
+        </span>
+      </div>
+      <div class="dim">
+        <span class="dim__num">04</span>
+        <span class="dim__name">Capacités stratégiques &amp; préparation aux évolutions futures
+          <span class="dim__hint">Les équipes disposent-elles des capacités pour livrer la thèse aujourd'hui et à mesure que l'entreprise évolue&nbsp;?</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ COMMENT ÇA FONCTIONNE ============================ -->
+<section class="how">
+  <div class="container">
+    <div class="how__intro">
+      <div>
+        <div class="section-eyebrow">Comment ça fonctionne</div>
+        <h2 class="how__title">Trois étapes. <span class="accent">Adaptées à votre stade du deal.</span></h2>
+      </div>
+      <p class="how__sub">Du teaser au data room, la méthodologie s'adapte au niveau d'accès dont vous disposez.</p>
+    </div>
+
+    <div class="steps">
+      <!-- Étape 1 -->
+      <div class="step">
+        <div class="step__num">01</div>
+        <div>
+          <h3 class="step__title">Partir de la thèse du deal</h3>
+          <p class="step__lead">Quelles hypothèses doivent tenir pour que l'acquisition crée de la valeur&nbsp;?</p>
+        </div>
+        <div class="step__body">
+          <div class="step__data-list">
+            <div class="step__data-row"><span>Synergies de coûts</span><span>ex. consolidation SG&amp;A, achats, services partagés</span></div>
+            <div class="step__data-row"><span>Croissance des revenus</span><span>ventes croisées, nouveaux marchés, expansion des canaux</span></div>
+            <div class="step__data-row"><span>Transition du fondateur</span><span>succession vers une gestion professionnelle</span></div>
+            <div class="step__data-row"><span>Amélioration opérationnelle</span><span>expansion des marges, productivité, libération du fonds de roulement</span></div>
+            <div class="step__data-row"><span>Intégration</span><span>combinaison des équipes, sites et systèmes</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Étape 2 -->
+      <div class="step">
+        <div class="step__num">02</div>
+        <div>
+          <h3 class="step__title">Évaluer l'entreprise cible</h3>
+          <p class="step__lead">HCS examine le leadership, les talents, la structure et les conditions d'exécution nécessaires pour livrer le plan.</p>
+        </div>
+        <div class="step__body">
+          <p><em>Elle s'appuie sur trois couches, adaptées à l'accès disponible à chaque stade du deal&nbsp;:</em></p>
+          <div class="layers">
+            <div class="layer">
+              <div class="layer__name">Analyse de la<br>thèse du deal</div>
+              <div class="layer__desc">Une bibliothèque de KPI structurée, alignée au type de deal et au plan de création de valeur.</div>
+            </div>
+            <div class="layer">
+              <div class="layer__name">Signaux<br>organisationnels</div>
+              <div class="layer__desc">Politiques, communications du leadership, schémas de responsabilité et signaux opérationnels.</div>
+            </div>
+            <div class="layer">
+              <div class="layer__name">Intelligence<br>de marché</div>
+              <div class="layer__desc">Postes ouverts, signaux publics et données externes consultables avant l'accès complet à la cible.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Étape 3 -->
+      <div class="step">
+        <div class="step__num">03</div>
+        <div>
+          <h3 class="step__title">Scorer le risque d'exécution</h3>
+          <p class="step__lead">Le résultat est un score composite avec ventilation par dimension, niveaux de risque et implications pour l'investisseur.</p>
+        </div>
+        <div class="step__body">
+          <div class="step__output">
+            <div class="step__output-lbl">Résultat</div>
+            <ul class="step__output-list">
+              <li>Score composite 0–100</li>
+              <li>Ventilation par dimension</li>
+              <li>Niveaux de risque</li>
+              <li>Implications pour l'investisseur</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="how__goal">
+      <span class="how__goal-lead">Pas un long rapport.</span>
+      <span class="accent">Une vue scorée de là où la création de valeur est </span><span class="how__goal-hit">la plus exposée.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ CE QUE VOUS RECEVEZ ============================ -->
+<section class="receive" id="deliverables">
+  <div class="container">
+    <div class="receive__head">
+      <div>
+        <div class="section-eyebrow">Ce que vous recevez</div>
+        <h2 class="h-rift">Cinq livrables. <span class="accent">Conçus pour le dossier du CI.</span></h2>
+      </div>
+      <p class="receive__intro">Chaque livrable est conçu pour être présenté directement à l'équipe deal ou au comité d'investissement.</p>
+    </div>
+
+    <div class="deliverables">
+
+      <!-- Vedette : le score lui-même -->
+      <div class="deliv deliv--feature deliv--span12" style="grid-column: span 12">
+        <div class="deliv__inner">
+          <div class="deliv__copy">
+            <span class="deliv__num">01</span>
+            <h3 class="deliv__title">M&amp;A Human Capital Score<span class="tm">™</span></h3>
+            <p class="deliv__desc">Un score composite. Quatre piliers. Onze dimensions diagnostiques.</p>
+            <p class="deliv__desc">Un score composite 0–100 avec niveaux de risque par pilier et lectures par sous-dimension qui l'expliquent.</p>
+            <p class="deliv__desc muted" style="color: color-mix(in srgb, var(--ti-beige) 60%, transparent); font-size: 13px;">Conçu pour être cité nommément dans les documents du CI et suivi d'un deal à l'autre au niveau du portefeuille.</p>
+          </div>
+          <div class="deliv__viz">
+            <div class="deliv__hero-score">62<span class="unit">/100</span></div>
+            <div class="deliv__dim-strip">
+              <div class="deliv__dim-pillar">Leadership &amp; continuité des talents</div>
+              <div class="deliv__dim-row">
+                <div>Capacité de leadership</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill med" style="width: 58%"></div></div>
+                <div class="deliv__dim-score">58</div>
+              </div>
+              <div class="deliv__dim-row">
+                <div>Risque lié aux personnes clés &amp; talents critiques</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill high" style="width: 46%"></div></div>
+                <div class="deliv__dim-score">46</div>
+              </div>
+
+              <div class="deliv__dim-pillar">Culture &amp; gouvernance</div>
+              <div class="deliv__dim-row">
+                <div>Culture, confiance &amp; collaboration</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill pos" style="width: 71%"></div></div>
+                <div class="deliv__dim-score">71</div>
+              </div>
+              <div class="deliv__dim-row">
+                <div>Gouvernance &amp; efficacité décisionnelle</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill med" style="width: 63%"></div></div>
+                <div class="deliv__dim-score">63</div>
+              </div>
+
+              <div class="deliv__dim-pillar">Modèle opérationnel &amp; capacité d'exécution</div>
+              <div class="deliv__dim-row">
+                <div>Infrastructure d'exécution</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill med" style="width: 64%"></div></div>
+                <div class="deliv__dim-score">64</div>
+              </div>
+              <div class="deliv__dim-row">
+                <div>Design organisationnel</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill pos" style="width: 70%"></div></div>
+                <div class="deliv__dim-score">70</div>
+              </div>
+              <div class="deliv__dim-row">
+                <div>Productivité &amp; capacité de l'effectif</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill med" style="width: 58%"></div></div>
+                <div class="deliv__dim-score">58</div>
+              </div>
+              <div class="deliv__dim-row">
+                <div>Coûts de l'effectif &amp; incitatifs</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill high" style="width: 52%"></div></div>
+                <div class="deliv__dim-score">52</div>
+              </div>
+              <div class="deliv__dim-row">
+                <div>Frein à l'intégration</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill high" style="width: 55%"></div></div>
+                <div class="deliv__dim-score">55</div>
+              </div>
+
+              <div class="deliv__dim-pillar">Capacités stratégiques &amp; préparation aux évolutions futures</div>
+              <div class="deliv__dim-row">
+                <div>Écarts de capacités</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill pos" style="width: 72%"></div></div>
+                <div class="deliv__dim-score">72</div>
+              </div>
+              <div class="deliv__dim-row">
+                <div>Préparation stratégique</div>
+                <div class="deliv__dim-bar"><div class="deliv__dim-fill pos" style="width: 77%"></div></div>
+                <div class="deliv__dim-score">77</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lecture des risques -->
+      <div class="deliv" style="grid-column: span 6">
+        <span class="deliv__num">02</span>
+        <h3 class="deliv__title">Ventilation du risque</h3>
+        <p class="deliv__desc">Une vue structurée de la concentration du risque d'exécution : leadership, personnes clés, rétention, structure, capacités.</p>
+        <div class="mini-bars">
+          <span class="b1"></span><span class="b2"></span><span class="b3"></span><span class="b4"></span><span class="b5"></span>
+        </div>
+        <div class="mini-bars__labels">
+          <span>Pers. clés</span><span>Gouvernance</span><span>Capacité</span><span>Compétences</span><span>Intégration</span>
+        </div>
+      </div>
+
+      <!-- Exposition financière -->
+      <div class="deliv" style="grid-column: span 6">
+        <span class="deliv__num">03</span>
+        <h3 class="deliv__title">Estimations d'exposition financière</h3>
+        <p class="deliv__desc">Risques traduits en termes d'affaires : coût des retards, exposition aux départs clés, frein à l'intégration, ou impact des jalons manqués.</p>
+        <div class="exposure-list">
+          <div class="exposure-row">
+            <span class="exposure-row__lbl">Coût des retards de jalons (T1–T2)</span>
+            <span class="exposure-row__val high">2,4 M$</span>
+          </div>
+          <div class="exposure-row">
+            <span class="exposure-row__lbl">Exposition aux départs de personnes clés</span>
+            <span class="exposure-row__val high">1,8 M$</span>
+          </div>
+          <div class="exposure-row">
+            <span class="exposure-row__lbl">Frein à l'intégration, 12 premiers mois</span>
+            <span class="exposure-row__val">0,9 M$</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan 100 premiers jours -->
+      <div class="deliv" style="grid-column: span 6">
+        <span class="deliv__num">04</span>
+        <h3 class="deliv__title">Plan des priorités des 100 premiers jours</h3>
+        <p class="deliv__desc">Les 3 à 5 risques les plus susceptibles d'affecter la thèse du deal, classés par exposition, avec des actions pour les 100 premiers jours.</p>
+        <div class="priorities">
+          <div class="priority">
+            <span class="priority__num">1</span>
+            <span class="priority__lbl">Stabiliser le leadership financier</span>
+            <span class="priority__days">Jours 1–30</span>
+          </div>
+          <div class="priority">
+            <span class="priority__num">2</span>
+            <span class="priority__lbl">Plan de rétention, top 8</span>
+            <span class="priority__days">Jours 1–14</span>
+          </div>
+          <div class="priority">
+            <span class="priority__num">3</span>
+            <span class="priority__lbl">Définir la cadence opérationnelle</span>
+            <span class="priority__days">Jours 30–60</span>
+          </div>
+          <div class="priority">
+            <span class="priority__num">4</span>
+            <span class="priority__lbl">Plan de remplacement, ingénierie</span>
+            <span class="priority__days">Jours 60–100</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rapport CI -->
+      <div class="deliv" style="grid-column: span 6">
+        <span class="deliv__num">05</span>
+        <h3 class="deliv__title">Rapport prêt pour le CI</h3>
+        <p class="deliv__desc">Un sommaire prêt pour le comité d'investissement, liant le risque capital humain au plan de création de valeur et aux priorités du jour&nbsp;1.</p>
+        <span class="ic-stamp"><span class="dot"></span>Conçu pour le dossier du CI</span>
+        <p class="deliv__desc" style="font-size: 13px; margin-top: 4px;">Sommaire en langage clair, exhibits scorés, et une page d'implications pour l'investisseur. S'intègre directement aux documents du comité.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ QUAND L'UTILISER ============================ -->
+<section class="lifecycle">
+  <div class="container">
+    <div class="lifecycle__head">
+      <div>
+        <div class="section-eyebrow">Quand l'utiliser</div>
+        <h2 class="h-rift">À chaque étape où le risque d'exécution <span class="accent">peut encore être pricé ou séquencé.</span></h2>
+      </div>
+      <p class="lifecycle__sub">Du premier dépistage externe avant LOI à la revue de portefeuille : un seul cadre de score cohérent sur tout le cycle de transaction.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="stage stage--active">
+        <div class="stage__pip">1</div>
+        <div class="stage__name">Pre-LOI</div>
+        <div class="stage__desc">Première lecture externe avant que le deal avance.</div>
+      </div>
+      <div class="stage">
+        <div class="stage__pip">2</div>
+        <div class="stage__name">DD confirmatoire</div>
+        <div class="stage__desc">En parallèle des travaux financiers, juridiques et opérationnels.</div>
+      </div>
+      <div class="stage">
+        <div class="stage__pip">3</div>
+        <div class="stage__name">Pre-Day 1</div>
+        <div class="stage__desc">Identifier les décisions de leadership et risques de rétention qui ne peuvent attendre.</div>
+      </div>
+      <div class="stage">
+        <div class="stage__pip">4</div>
+        <div class="stage__name">100 premiers jours</div>
+        <div class="stage__desc">Suivre la capacité d'exécution par rapport au plan.</div>
+      </div>
+      <div class="stage">
+        <div class="stage__pip">5</div>
+        <div class="stage__name">Revue de portefeuille</div>
+        <div class="stage__desc">Score cohérent entre entreprises pour la priorisation conseil et gestion.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ POURQUOI C'EST DIFFÉRENT ============================ -->
+<section class="different">
+  <div class="container">
+    <div class="different__head">
+      <div>
+        <div class="section-eyebrow">Pourquoi c'est différent</div>
+        <h2 class="h-rift">La diligence RH traditionnelle répond à une <span class="accent">question différente.</span></h2>
+      </div>
+      <div class="different__sub">
+        <p>La diligence RH traditionnelle examine les contrats d'emploi, les politiques, les effectifs et les risques de conformité. Ce travail est nécessaire.</p>
+        <p>Mais il répond rarement à la vraie question de deal : <em>cette organisation peut-elle exécuter le plan de création de valeur ?</em></p>
+      </div>
+    </div>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Diligence RH traditionnelle</th>
+          <th class="ti-col">M&amp;A Human Capital Score™</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Résultat</td>
+          <td class="trad-col">Revue qualitative</td>
+          <td class="ti-col">Lecture scorée, fondée sur des preuves</td>
+        </tr>
+        <tr>
+          <td>Focus</td>
+          <td class="trad-col">Contrats, politiques, conformité</td>
+          <td class="ti-col">Risque d'exécution lié à la thèse de deal</td>
+        </tr>
+        <tr>
+          <td>Conçu pour</td>
+          <td class="trad-col">Équipes RH et juridiques</td>
+          <td class="ti-col">Décisions d'investissement</td>
+        </tr>
+        <tr>
+          <td>Répond à</td>
+          <td class="trad-col">Ce qui existe aujourd'hui</td>
+          <td class="ti-col">L'organisation peut-elle livrer le plan ?</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="different__kicker">
+      <span class="word">Structuré autour de la thèse de deal.</span>
+      <span class="word">Scoré.</span>
+      <span class="word word--accent">Prêt pour le CI.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ QUI LE CONSTRUIT ============================ -->
+<section class="proof">
+  <div class="container">
+    <div class="proof__grid">
+      <div>
+        <div class="section-eyebrow">Qui le construit</div>
+        <h2 class="h-rift">Construit sur plus de 20 ans en <span class="accent">finance, capital humain et technologie.</span></h2>
+      </div>
+      <div class="proof__body">
+        <p>Le M&amp;A Human Capital Score™ est la méthodologie de <strong>Talent Insights 360</strong>. Une équipe multidisciplinaire qui mesure ce que les modèles financiers supposent.</p>
+        <p>La question que tout comité d'investissement finit par poser&nbsp;: <em>cette organisation peut-elle livrer le plan que nous venons de souscrire&nbsp;?</em></p>
+        <p class="proof__foot"><em>Basée à Montréal. Au service des fonds de capital-investissement, des équipes de développement corporatif, et des comités d'investissement à travers l'Amérique du Nord.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONVERSATIONS DE DEAL ============================ -->
+<section class="conversation" id="conversation">
+  <div class="container">
+    <div class="conversation__grid">
+      <div>
+        <div class="section-eyebrow">Conçu pour les conversations de deal</div>
+        <h2 class="h-rift">La première conversation est <span class="accent">exploratoire.</span></h2>
+      </div>
+      <div class="conversation__body">
+        <p>Nous examinons le contexte de transaction, la thèse de deal et les zones où le risque d'exécution pourrait être concentré, puis nous déterminons ensemble le bon niveau de portée.</p>
+        <div class="conversation__no">
+          <div class="conversation__no-row"><span class="conversation__no-mark"></span>Pas de processus lourd</div>
+          <div class="conversation__no-row"><span class="conversation__no-mark"></span>Pas de grande demande de données</div>
+          <div class="conversation__no-row"><span class="conversation__no-mark"></span>Sans engagement</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CTA FINAL ============================ -->
+<section class="final-cta" id="cta">
+  <div class="container">
+    <div class="final-cta__inner">
+      <div>
+        <div class="section-eyebrow">Démarrer la conversation</div>
+        <h2 class="final-cta__question">
+          <span class="final-cta__setup">Votre modèle de deal a valorisé les actifs. Les synergies. Les multiples.</span>
+          <span class="final-cta__hook">A-t-il valorisé les équipes&nbsp;?</span>
+        </h2>
+      </div>
+      <div class="final-cta__cta">
+        <a class="btn" href="mailto:info@talentinsights360.com?subject=M%26A%20Human%20Capital%20Score%20-%20Conversation%20exploratoire">Démarrer la conversation <span class="arr">→</span></a>
+        <span class="final-cta__caption">20 minutes. Pas de data room. Sans engagement.</span>
+        <div class="final-cta__secondary">
+          <a class="final-cta__secondary-link" href="#conversation">Ce que couvre une conversation de 20 minutes</a>
+          <a class="final-cta__secondary-link" href="#deliverables">Exemple de livrable prêt pour le CI</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img class="footer__logo" src="../assets/logo-horizontal-white.png" alt="Talent Insights 360" />
+        <p class="footer__tagline">TI360 rend visibles les risques humains qui ralentissent l'exécution. Le pont entre la finance et le capital humain : le franchir détermine si la valeur est créée ou détruite.</p>
+      </div>
+      <div>
+        <div class="footer__col-lbl">Solution</div>
+        <div class="footer__links">
+          <a href="/fr/">M&amp;A Human Capital Score™</a>
+          <a href="/" hreflang="en" lang="en">English</a>
+          <a href="https://talentinsights360.com/" target="_blank" rel="noopener">Talent Insights 360</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-lbl">Contact</div>
+        <div class="footer__links">
+          <a href="mailto:info@talentinsights360.com">info@talentinsights360.com</a>
+          <a href="https://www.linkedin.com/company/talent-insights-360/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-lbl">Adresse</div>
+        <address class="footer__address">
+          4950, chemin Queen-Mary<br />
+          Bureau 100<br />
+          Montréal, Québec  H3W 1X2<br />
+          Canada
+        </address>
+      </div>
+    </div>
+    <hr class="footer__rule" />
+    <div class="footer__base">
+      <span>© 2026 Talent Insights 360 inc. Tous droits réservés.</span>
+      <span>M&amp;A Human Capital Score™ est une marque de commerce de Talent Insights 360 inc.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================ TWEAKS PANEL ============================ -->
+<div id="tweaks-panel" role="dialog" aria-label="Réglages" aria-hidden="true">
+  <h4>
+    Réglages
+    <button class="close-x" id="tw-close" aria-label="Fermer">×</button>
+  </h4>
+  <p class="tw-sub">Variations rapides du design.</p>
+
+  <div class="tw-group">
+    <span class="tw-lbl">Couleur d'accent</span>
+    <div class="tw-seg" data-tw="accent">
+      <button data-val="crimson">Crimson</button>
+      <button data-val="cobalt">Cobalt</button>
+    </div>
+  </div>
+
+  <div class="tw-group">
+    <span class="tw-lbl">Police des titres</span>
+    <div class="tw-seg" data-tw="display">
+      <button data-val="rift">Rift</button>
+      <button data-val="inter">Inter</button>
+    </div>
+  </div>
+
+  <div class="tw-group">
+    <span class="tw-lbl">Espacement</span>
+    <div class="tw-seg" data-tw="density">
+      <button data-val="airy">Aéré</button>
+      <button data-val="compact">Compact</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* =========================================================================
+   Tweaks panel: minimal protocol implementation
+   ========================================================================= */
+(function() {
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "accent": "crimson",
+    "display": "rift",
+    "density": "compact"
+  }/*EDITMODE-END*/;
+
+  const state = Object.assign({}, TWEAK_DEFAULTS);
+  const panel = document.getElementById('tweaks-panel');
+  const closeBtn = document.getElementById('tw-close');
+
+  function syncPanelA11y() {
+    if (!panel) return;
+    var open = panel.classList.contains('is-on');
+    panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+  }
+
+  function apply() {
+    document.body.setAttribute('data-accent', state.accent);
+    document.body.setAttribute('data-display', state.display);
+    document.body.setAttribute('data-density', state.density);
+
+    // Display face
+    if (state.display === 'inter') {
+      document.documentElement.style.setProperty('--font-display', "'Inter', sans-serif");
+    } else {
+      document.documentElement.style.setProperty('--font-display', "'Rift', 'Inter', sans-serif");
+    }
+
+    // Density
+    const ratio = state.density === 'compact' ? 0.7 : 1;
+    document.querySelectorAll('section').forEach(s => {
+      // No-op: we use class-based scaling
+    });
+    document.body.style.setProperty('--density-scale', ratio);
+
+    // Update segment UI
+    document.querySelectorAll('.tw-seg').forEach(seg => {
+      const key = seg.dataset.tw;
+      seg.querySelectorAll('button').forEach(b => {
+        b.classList.toggle('on', b.dataset.val === state[key]);
+      });
+    });
+  }
+
+  // Wire segments
+  document.querySelectorAll('.tw-seg').forEach(seg => {
+    const key = seg.dataset.tw;
+    seg.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state[key] = btn.dataset.val;
+        apply();
+        try {
+          window.parent.postMessage({type: '__edit_mode_set_keys', edits: { [key]: state[key] }}, '*');
+        } catch(e) {}
+      });
+    });
+  });
+
+  // CSS for density variants (added inline)
+  const dsStyle = document.createElement('style');
+  dsStyle.textContent = `
+    body[data-density="compact"] section { padding: 64px 0; }
+    body[data-density="compact"] .hero { padding: 64px 0 80px; }
+    body[data-density="compact"] .what-it-is { padding: 64px 0; }
+    body[data-density="compact"] .problem { padding: 80px 0; }
+    body[data-density="compact"] .how { padding: 80px 0; }
+    body[data-density="compact"] .receive { padding: 80px 0; }
+    body[data-density="compact"] .lifecycle { padding: 80px 0; }
+    body[data-density="compact"] .different { padding: 80px 0; }
+    body[data-density="compact"] .proof { padding: 64px 0; }
+    body[data-density="compact"] .conversation { padding: 64px 0; }
+    body[data-density="compact"] .final-cta { padding: 80px 0 64px; }
+    body[data-density="compact"] .step { padding: 32px 0; }
+  `;
+  document.head.appendChild(dsStyle);
+
+  // Edit-mode protocol: register listeners BEFORE announcing availability
+  window.addEventListener('message', (e) => {
+    if (!e.data || typeof e.data !== 'object') return;
+    if (e.data.type === '__activate_edit_mode')   { panel.classList.add('is-on'); syncPanelA11y(); }
+    if (e.data.type === '__deactivate_edit_mode') { panel.classList.remove('is-on'); syncPanelA11y(); }
+  });
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      panel.classList.remove('is-on');
+      syncPanelA11y();
+      try { window.parent.postMessage({type: '__edit_mode_dismissed'}, '*'); } catch(e) {}
+    });
+  }
+  try { window.parent.postMessage({type: '__edit_mode_available'}, '*'); } catch(e) {}
+
+  apply();
+  syncPanelA11y();
+})();
+</script>
+
+<script>
+(function () {
+  var skip = document.querySelector('.skip-link');
+  var mainEl = document.getElementById('main');
+  if (!skip || !mainEl) return;
+  skip.addEventListener('click', function (e) {
+    e.preventDefault();
+    mainEl.focus({ preventScroll: true });
+    mainEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+})();
+</script>
+
+</body>
+</html>
