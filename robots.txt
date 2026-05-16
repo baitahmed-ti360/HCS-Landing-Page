@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /M&A%20Human%20Capital%20Score%20-%20Landing-print.html
+
+Sitemap: https://talentinsights360.com/sitemap.xml
